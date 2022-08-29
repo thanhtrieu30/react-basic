@@ -6,6 +6,7 @@ import productApi from './Api/product';
 import Header from './components/Header';
 import NotFound from './components/Notfound';
 import AlbumFeature from './features/Album';
+import CartFeature from './features/Cart';
 import Counter from './features/Counter';
 import ProductFeature from './features/Product';
 import TodoFeature from './features/todo';
@@ -36,10 +37,10 @@ function App() {
 
     <Switch> 
     
-      {/* <Route path="/" component={Counter} exact /> */}
-      <Route path="/todo" component={TodoFeature} />
-      <Route path="/album" component={AlbumFeature} /> 
+      <Route path="/" component={ProductFeature} exact />
       <Route path="/products" component={ProductFeature} /> 
+      <Route path="/cart" component={CartFeature} /> 
+
 
     </Switch>
     </div>
